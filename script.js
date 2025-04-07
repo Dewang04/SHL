@@ -26,7 +26,8 @@ function appendMessage(sender, message) {
 // Asynchronous function that sends a POST request to your backend API endpoint
 async function getBotReply(userMessage) {
   try {
-    const response = await fetch("http://localhost:8000/recommend", {
+    // http://localhost:8000
+    const response = await fetch("https://shl-backend.vercel.app/recommend", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
