@@ -27,7 +27,7 @@ function appendMessage(sender, message) {
 async function getBotReply(userMessage) {
   try {
     // http://localhost:8000
-    const response = await fetch("https://dewang04.github.io/SHL_BACKEND/recommend", {
+    const response = await fetch("http://localhost:8000/recommend", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
